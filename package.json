@@ -9,21 +9,17 @@
     "watch": "skpm build --watch",
     "render": "skpm build --watch --run",
     "render:once": "skpm build --run",
-    "web": "react run src/web.js",
-    "link-plugin": "skpm link",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link-plugin": "skpm link"
   },
   "keywords": [],
   "author": "Brijesh Bittu <brijeshb42@gmail.com> (http://bitwiser.in/)",
   "license": "MIT",
   "devDependencies": {
-    "skpm": "^0.9.1"
+    "skpm": "^0.8.0"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-primitives": "^0.3.4",
     "react-sketchapp": "^0.10.2",
     "react-test-renderer": "^15.5.4"
   }
