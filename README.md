@@ -6,7 +6,7 @@ A boilerplate project to quickly get you up and running.
 
 * Clone this repo -
     ```bash
-    git clone https://github.com/brijeshb42/react-sketchapp-boilerplate.git your-project-name
+    git clone https://github.com/liuzenan/react-sketchapp-boilerplate.git your-project-name
     cd your-project-name
     rm -rf .git
 

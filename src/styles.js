@@ -4,21 +4,18 @@ export default {
   container: {
       flexDirection: 'column',
       flex: 1,
-      justifyContent: 'center',
+      justifyContent: 'space-around',
       alignItems: 'center',
       width: 375,
       height: 667,
-      backgroundColor: '#fefefe',
-      borderWidth: 2,
-      borderRadius: 4,
-      overflowY: 'scroll',
+      backgroundColor: '#fff'
   },
   text: {
       fontFamily: 'Helvetica',
-      fontSize: 24,
-      lineHeight: 24,
-      color: '#f1622b',
+      fontSize: 16,
+      lineHeight: 22,
+      color: '#333',
       textAlign: 'center',
-      fontWeight: 'bold',
+      fontWeight: 'normal',
   }
 };
