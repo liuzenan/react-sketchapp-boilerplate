@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-sketchapp';
+import { StyleSheet, View, Text } from 'react-sketchapp';
 
-import styles from '../_styles/controls';
+import styles from './switch-style';
 
 const switchClass = (isOn) => {
   if (isOn) {
-    return [styles.switch, styles.switch__on];
+    return StyleSheet.flatten([styles.switch, styles.switch__on]);
   }
   return styles.switch;
 };
