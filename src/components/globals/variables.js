@@ -13,7 +13,8 @@ export default {
   colorPrimary: '#072340',
   colorAccent: '#0BB241',
   colorWhite: '#fff',
-  colorLightGray: '#D8D8D8',
+  colorGrayLight: '#D8D8D8',
+  colorGrayMedium: '#666',
   colorControlShadow: 'rgba(0,0,0,0.2)',
   colorCardShadow: 'rgba(0,0,0,0.1)',
 

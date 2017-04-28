@@ -6,7 +6,7 @@ export default {
     width: 40,
     height: 24,
     borderRadius: 12,
-    backgroundColor: variables.colorLightGray,
+    backgroundColor: variables.colorGrayLight,
     flexDirection: 'column',
     flex: 0,
     justifyContent: 'center',

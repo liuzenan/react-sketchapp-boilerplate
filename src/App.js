@@ -8,6 +8,7 @@ import { Button, Switch } from './components/controls';
 import { Card, List } from './components/containers';
 import { Rows } from './components/structures';
 import { SectionHeader } from './components/media';
+import { InputText } from './components/inputs';
 
 const App = () => (
     <View style={styles.container} name="Wrapper">
@@ -27,6 +28,7 @@ const App = () => (
           <Rows>
             <Text style={typography.h4}>I'm a 35-year-old male who is not married and has no children</Text>
             <Text style={typography.h4}>My annual income from all sources is SGD 100,000</Text>
+            <InputText label="Input Label" value="Input Value" placeholder="Input Placeholder"></InputText>
           </Rows>
         </Card>
         <List headerTitle="Test" listArray={

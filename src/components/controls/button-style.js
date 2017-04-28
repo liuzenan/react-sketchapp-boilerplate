@@ -2,7 +2,9 @@ import variables from '../globals/variables';
 
 export default {
   button: {
-    padding: 12,
+    paddingTop: 17,
+    paddingBottom: 18,
+    paddingHorizontal: 12,
     borderRadius: 3
   },
   button_text: {
@@ -13,7 +15,7 @@ export default {
     textAlign: 'center'
   },
   buttonDefault: {
-    backgroundColor: variables.colorLightGray
+    backgroundColor: variables.colorGrayLight
   },
   buttonDefault_text: {
     color: variables.colorPrimary

@@ -9,12 +9,12 @@ export default {
   },
   list__withTopBorder: {
     borderTopWidth: 1,
-    borderTopColor: variables.colorLightGray
+    borderTopColor: variables.colorGrayLight
   },
   list_item: {
     padding: variables.spaceMedium,
     borderBottomWidth: 1,
-    borderBottomColor: variables.colorLightGray
+    borderBottomColor: variables.colorGrayLight
   },
   list_header: {
     backgroundColor: variables.colorPrimary,

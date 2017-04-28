@@ -6,15 +6,15 @@ import App from './App';
 
 const Document = props => (
   <Columns>
-    <View style={{width:375}}>
+    <Artboard style={{width:375}}>
       <App />
-    </View>
-    <View style={{width:640}}>
+    </Artboard>
+    <Artboard style={{width:480}}>
       <App />
-    </View>
-    <View style={{width:1024}}>
+    </Artboard>
+    <Artboard style={{width:640}}>
       <App />
-    </View>
+    </Artboard>
   </Columns>
 );
 

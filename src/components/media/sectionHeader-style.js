@@ -5,7 +5,7 @@ export default {
     paddingTop: variables.spaceSmall,
     paddingBottom: variables.spaceSmall,
     borderBottomWidth: 1,
-    borderBottomColor: variables.colorLightGray
+    borderBottomColor: variables.colorGrayLight
   },
   sectionHeader_text: {
     fontSize: variables.fontSizeH3
