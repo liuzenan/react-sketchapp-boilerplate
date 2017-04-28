@@ -6,24 +6,37 @@ import styles from './styles';
 import { typography } from './components/globals';
 import { Button, Switch } from './components/controls';
 import { Card, List } from './components/containers';
-
+import { Rows } from './components/structures';
+import { SectionHeader } from './components/media';
 
 const App = () => (
     <View style={styles.container} name="Wrapper">
-      <List>
+      <View style={styles.content} name="Content">
+      <Rows>
+        <SectionHeader title="Section Header"/>
         <Card>
-          <Text style={typography.h1}>Hello World!</Text>
-          <Button label="Default Button"/>
-          <Button isPrimary={true} label="Primary Button"/>
-          <Switch isOn={false}/>
+          <Rows>
+            <Text style={typography.h4}>Hello World!</Text>
+            <Button label="Default Button"/>
+            <Button isPrimary={true} label="Primary Button"/>
+            <Switch isOn={false}/>
+          </Rows>
         </Card>
-        <View style={styles.card2}>
-          <Card>
-            <Text style={typography.h2}>I'm a 35-year-old male who is not married and has no children</Text>
-            <Text style={typography.h2}>My annual income from all sources is SGD 100,000</Text>
-          </Card>
-        </View>
-      </List>
+        <SectionHeader title="Section Header"/>
+        <Card>
+          <Rows>
+            <Text style={typography.h4}>I'm a 35-year-old male who is not married and has no children</Text>
+            <Text style={typography.h4}>My annual income from all sources is SGD 100,000</Text>
+          </Rows>
+        </Card>
+        <List headerTitle="Test" listArray={
+          [ 'Hello',
+            'Nice to meet you',
+            'Welcome to StashAway',
+            'Hello']
+        }/>
+      </Rows>
+      </View>
     </View>
 );
 

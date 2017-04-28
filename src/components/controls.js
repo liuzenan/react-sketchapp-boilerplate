@@ -1,4 +1,3 @@
-// Components
 import Button from './controls/button';
 import Switch from './controls/switch';
 
