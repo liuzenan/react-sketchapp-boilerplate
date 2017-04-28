@@ -1,8 +1,9 @@
 import variables from '../globals/variables';
+import { StyleSheet } from 'react-sketchapp';
 
 export default {
   inputText: {
-    borderWidth: 1,
+    borderWidth: StyleSheet.hairlineWidth,
     borderColor: variables.colorGrayLight,
     backgroundColor: variables.colorWhite,
     paddingVertical: 16,

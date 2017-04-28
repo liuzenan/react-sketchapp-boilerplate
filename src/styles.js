@@ -2,15 +2,15 @@ import { StyleSheet } from 'react-sketchapp';
 
 export default {
   container: {
-      flexDirection: 'column',
-      flex: 1,
       justifyContent: 'flex-start',
-      alignItems: 'stretch',
+      alignItems: 'flex-start',
       backgroundColor: '#EDEFF1',
-      overflow: 'scroll'
+      padding: 32,
+      marginRight: -16
   },
   content: {
-    padding: 16
+    width: 320,
+    marginRight: 16
   },
   text: {
       fontFamily: 'Akkurat Pro',

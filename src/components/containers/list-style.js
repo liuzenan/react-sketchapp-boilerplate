@@ -1,4 +1,5 @@
 import variables from '../globals/variables';
+import { StyleSheet } from 'react-sketchapp';
 
 export default {
   list: {
@@ -8,12 +9,12 @@ export default {
     backgroundColor: variables.colorWhite,
   },
   list__withTopBorder: {
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth,
     borderTopColor: variables.colorGrayLight
   },
   list_item: {
     padding: variables.spaceMedium,
-    borderBottomWidth: 1,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: variables.colorGrayLight
   },
   list_header: {

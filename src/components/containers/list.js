@@ -28,7 +28,7 @@ const List = (props) => (
     }
     <View style={listClass(props.headerTitle)} name="List Body">
       {
-        props.listArray.map(title =>
+        props.listItems.map(title =>
           <ListItem key={shortid.generate()} title={title} />
         )
       }

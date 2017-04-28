@@ -1,4 +1,5 @@
 var fontSizeDefault = 14;
+var spaceDefault = 16;
 
 export default {
   // typography
@@ -17,13 +18,15 @@ export default {
   colorGrayMedium: '#666',
   colorControlShadow: 'rgba(0,0,0,0.2)',
   colorCardShadow: 'rgba(0,0,0,0.1)',
+  colorWhiteTraslucent: 'rgba(255,255,255,0.9)',
 
   // spacings
-  spaceXS: 4,
-  spaceSmall: 8,
-  spaceMedium: 16,
-  spaceLarge: 32,
-  spaceXL: 64,
+  spaceXS: spaceDefault/4,
+  spaceSmall: spaceDefault/2,
+  spaceMedium: spaceDefault,
+  spaceLarge: spaceDefault*2,
+  spaceXL: spaceDefault*4,
+  spaceGutter: spaceDefault,
 
   // border radius
   borderRadiusDefault: 3
