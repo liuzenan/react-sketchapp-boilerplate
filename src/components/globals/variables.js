@@ -4,7 +4,9 @@ var spaceDefault = 16;
 export default {
   // typography
   fontSizeDefault: fontSizeDefault,
-  fontWeightNormal: 'normal',
+  fontWeightNormal: 400,
+  fontWeightMedium: 500,
+  fontWeightSemiBold: 600,
   fontSizeH1: Math.floor(fontSizeDefault * 3.2),
   fontSizeH2: Math.floor(fontSizeDefault * 2.4),
   fontSizeH3: Math.floor(fontSizeDefault * 1.6),
@@ -18,6 +20,7 @@ export default {
   colorGrayMedium: '#666',
   colorControlShadow: 'rgba(0,0,0,0.2)',
   colorCardShadow: 'rgba(0,0,0,0.1)',
+  colorButtonShadow: 'rgba(0,0,0,0.05)',
   colorWhiteTraslucent: 'rgba(255,255,255,0.9)',
 
   // spacings

@@ -14,7 +14,7 @@ const TabBarCell = (props) => (
 const TabBar = (props) => (
     <View style={styles.tabBar} name="TabBar">
       {
-        props.tabItems.map(tabItem =>
+        props.items.map(tabItem =>
           <TabBarCell
             key={shortid.generate()}
             iconSrc={tabItem.iconSrc}

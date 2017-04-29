@@ -28,7 +28,8 @@ export default {
   tabBar_cell_text: {
     fontSize: 10,
     lineHeight: 10,
-    color: variables.colorPrimary
+    color: variables.colorGrayMedium,
+    fontWeight: variables.fontWeightMedium
   }
 
 };

@@ -10,8 +10,8 @@ const switchClass = (isOn) => {
   return styles.switch;
 };
 
-const Switch = ({ isOn }) => (
-    <View style={switchClass(isOn)} name="Switch">
+const Switch = (props) => (
+    <View style={switchClass(props.hasOwnProperty('on'))} name="Switch">
       <View style={styles.switch_button} name="Switch Button">
       </View>
     </View>

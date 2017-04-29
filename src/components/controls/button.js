@@ -17,9 +17,9 @@ const buttonTextClass = (isPrimary) => {
   return StyleSheet.flatten([styles.button_text, styles.buttonDefault_text]);
 };
 
-const Button = ({ label, isPrimary }) => (
-    <View style={buttonClass(isPrimary)} name="Button">
-      <Text style={buttonTextClass(isPrimary)}>{ label }</Text>
+const Button = (props) => (
+    <View style={buttonClass(props.hasOwnProperty('primary'))} name="Button">
+      <Text style={buttonTextClass(props.hasOwnProperty('primary'))}>{ props.children }</Text>
     </View>
 );
 

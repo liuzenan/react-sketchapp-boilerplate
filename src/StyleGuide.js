@@ -5,9 +5,9 @@ import styles from './styles';
 
 import { typography } from './components/globals';
 import { Button, Switch, TabBar } from './components/controls';
-import { Card, List, Section } from './components/containers';
-import { Rows, Columns, Grid } from './components/structures';
-import { SectionHeader, Flag } from './components/media';
+import { Card, SimpleList, Section } from './components/containers';
+import { Rows, Columns, Grid, Flag, ActionRow } from './components/structures';
+import { SectionHeader } from './components/media';
 import { InputText } from './components/inputs';
 
 const StyleGuide = () => (
@@ -20,15 +20,15 @@ const StyleGuide = () => (
         <Section>
           <Rows>
             <Text>Buttons:</Text>
-            <Button label="Default Button"/>
-            <Button isPrimary={true} label="Primary Button"/>
+            <Button>Default Button</Button>
+            <Button primary>Primary Button</Button>
           </Rows>
         </Section>
 
         <Section>
           <Rows>
           <Text>Switch:</Text>
-          <Switch isOn={false}/>
+          <Switch on/>
           </Rows>
         </Section>
 
@@ -36,7 +36,7 @@ const StyleGuide = () => (
           <Rows>
           <Text>TabBar:</Text>
           <TabBar
-            tabItems={
+            items={
                 [
                   {
                     iconSrc: 'https://unsplash.it/48',
@@ -75,7 +75,7 @@ const StyleGuide = () => (
         <Section>
         <Rows>
         <Text>List:</Text>
-        <List headerTitle="Test" listItems={
+        <SimpleList header="List Header" items={
           [ 'Hello',
             'Nice to meet you',
             'Welcome to StashAway',
@@ -89,11 +89,19 @@ const StyleGuide = () => (
         <Text>Card:</Text>
         <Card>
           <Flag imageSrc="https://unsplash.it/200" imageWidth={100} imageHeight={100}>
-            <Rows>
+            <Rows gutterSize="small">
               <Text style={typography.h3}>Hello World!</Text>
               <Text>Welcome to StashAway</Text>
             </Rows>
           </Flag>
+        </Card>
+        <Card>
+          <ActionRow action="Review">
+            <Rows gutterSize="small">
+              <Text style={typography.h3}>Hello World!</Text>
+              <Text>Welcome to StashAway</Text>
+            </Rows>
+          </ActionRow>
         </Card>
         </Rows>
         </Section>

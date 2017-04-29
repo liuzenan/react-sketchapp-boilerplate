@@ -7,21 +7,23 @@ export default {
     alignItems: 'stretch',
     justifyContent: 'flex-start',
     backgroundColor: variables.colorWhite,
-  },
-  list__withTopBorder: {
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: variables.colorGrayLight
+    shadowColor: variables.colorCardShadow,
+    shadowOffset: { width: 0, height: 1},
+    shadowRadius: 3,
+    borderRadius: variables.borderRadiusDefault,
+    overflow: 'hidden'
   },
   list_item: {
     padding: variables.spaceMedium,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: variables.colorGrayLight
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: variables.colorGrayLight
   },
   list_header: {
     backgroundColor: variables.colorPrimary,
     padding: variables.spaceMedium
   },
   list_header_title: {
-    color: variables.colorWhite
+    color: variables.colorWhite,
+    fontWeight: variables.fontWeightMedium
   }
 };
