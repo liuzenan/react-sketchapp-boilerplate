@@ -1,7 +1,9 @@
-import TabBar from './navigation/tabBar';
+import TabBarBottom from './navigation/tabBarBottom';
+import TabBarTop from './navigation/tabBarTop';
 import NavBarFeatured from './navigation/navBarFeatured';
 
 export default {
-  TabBar: TabBar,
+  TabBarBottom: TabBarBottom,
+  TabBarTop: TabBarTop,
   NavBarFeatured: NavBarFeatured
 }

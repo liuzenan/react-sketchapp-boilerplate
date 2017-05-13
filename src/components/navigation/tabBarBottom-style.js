@@ -30,6 +30,10 @@ export default {
     lineHeight: 11,
     color: variables.colorGrayMedium,
     fontWeight: variables.fontWeightMedium
+  },
+
+  tabBar_cell_text__active: {
+    color: variables.colorAccent
   }
 
 };

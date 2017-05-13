@@ -8,8 +8,8 @@ import { Button, Switch } from './components/controls';
 import { Card, ListSimple, Section } from './components/containers';
 import { Rows, Columns, Grid, Flag, ActionRow } from './components/structures';
 import { SectionHeader } from './components/media';
-import { InputText } from './components/inputs';
-import { TabBar, NavBarFeatured } from "./components/navigation";
+import { InputText, TextArea, Select, SearchBox, Option, CheckBox } from './components/inputs';
+import { TabBarBottom, TabBarTop, NavBarFeatured } from "./components/navigation";
 
 const StyleGuide = () => (
     <View style={styles.container} name="Wrapper">
@@ -38,21 +38,46 @@ const StyleGuide = () => (
         <SectionHeader title="Navigation"/>
         <Section>
           <Rows>
-            <Text>TabBar:</Text>
-            <TabBar
+            <Text>Bottom TabBar:</Text>
+            <TabBarBottom
               items={
                   [
                     {
                       iconSrc: 'https://image.ibb.co/iCJX1Q/icon_portfolio.png',
-                      label: 'Portfolios'
+                      iconActiveSrc: 'https://image.ibb.co/jnqegQ/icon_portfolios_active.png',
+                      label: 'Portfolios',
+                      isActive: true
                     },
                     {
                       iconSrc: 'https://image.ibb.co/cRhEFk/icon_assets.png',
+                      iconActiveSrc: 'https://image.ibb.co/c6Ns1Q/icon_assets_active.png',
                       label: 'Assets'
                     },
                     {
                       iconSrc: 'https://image.ibb.co/dy7gvk/icon_transactions.png',
+                      iconActiveSrc: 'https://image.ibb.co/mOgVo5/icon_transactions_active.png',
                       label: 'Transactions'
+                    }
+                  ]
+                }
+              />
+          </Rows>
+        </Section>
+        <Section>
+          <Rows>
+            <Text>Top TabBar:</Text>
+            <TabBarTop
+              items={
+                  [
+                    {
+                      label: 'Summary',
+                      isActive: true
+                    },
+                    {
+                      label: 'Portfolio'
+                    },
+                    {
+                      label: 'Goal Target'
                     }
                   ]
                 }
@@ -77,7 +102,53 @@ const StyleGuide = () => (
           <InputText label="Input Label" value="Input Value" placeholder="Input Placeholder"></InputText>
         </Rows>
       </Section>
+      <Section>
+        <Rows>
+          <Text>Text Area:</Text>
+          <TextArea placeholder="Write something..."></TextArea>
+          <TextArea placeholder="Write something..." value="Text area value" height={180}></TextArea>
+        </Rows>
+      </Section>
+      <Section>
+        <Rows>
+          <Text>Select:</Text>
+          <Select placeholder="Select your country" label="Citizenship" value="China"></Select>
+        </Rows>
+      </Section>
+      <Section>
+        <Rows>
+          <Text>Search Box:</Text>
+          <SearchBox placeholder="Search address"></SearchBox>
+        </Rows>
+      </Section>
+      <Section>
+        <Rows>
+          <Text>Option:</Text>
+          <Option
+            items={
+              [
+                {
+                  label: 'Male',
+                  isActive: true
+                },
+                {
+                  label: 'Female'
+                }
+              ]
+            }/>
+        </Rows>
+      </Section>
+      <Section>
+        <Rows>
+          <Text>Check Box:</Text>
+          <Columns>
+            <CheckBox/>
+            <CheckBox checked/>
+          </Columns>
 
+          <CheckBox checked label="Checkbox Label"/>
+        </Rows>
+      </Section>
       </View>
 
       <View style={styles.content} name="Category">

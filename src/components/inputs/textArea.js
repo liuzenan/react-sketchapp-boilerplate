@@ -3,13 +3,24 @@ import { StyleSheet, View, Text } from 'react-sketchapp';
 
 import styles from './textArea-style';
 
+const textAreaStyle = (height) => {
+  if (height) {
+    return StyleSheet.flatten([
+      styles.textArea,
+      {
+        height: height
+      }]);
+  }
+  return styles.textArea;
+};
+
 const TextArea = (props) => (
-    <View style={inputTextClass(props.value)} name="Text Area">
+    <View style={textAreaStyle(props.height)} name="Text Area">
       {props.value &&
-        <Text style={styles.inputText_value}>{props.value}</Text>
+        <Text style={styles.textArea_value}>{props.value}</Text>
       }
       {!props.value &&
-        <Text style={styles.inputText_placeholder}>{props.placeholder}</Text>
+        <Text style={styles.textArea_placeholder}>{props.placeholder}</Text>
       }
     </View>
 );
