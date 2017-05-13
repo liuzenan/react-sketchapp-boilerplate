@@ -1,9 +1,9 @@
 import Card from './containers/card';
-import SimpleList from './containers/simpleList';
+import ListSimple from './containers/listSimple';
 import Section from './containers/section';
 
 export default {
   Card: Card,
-  SimpleList: SimpleList,
+  ListSimple: ListSimple,
   Section: Section
 }

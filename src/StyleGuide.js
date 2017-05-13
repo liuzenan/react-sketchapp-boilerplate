@@ -4,11 +4,12 @@ import { Image, View, Text } from 'react-sketchapp';
 import styles from './styles';
 
 import { typography } from './components/globals';
-import { Button, Switch, TabBar } from './components/controls';
-import { Card, SimpleList, Section } from './components/containers';
+import { Button, Switch } from './components/controls';
+import { Card, ListSimple, Section } from './components/containers';
 import { Rows, Columns, Grid, Flag, ActionRow } from './components/structures';
 import { SectionHeader } from './components/media';
 import { InputText } from './components/inputs';
+import { TabBar, NavBarFeatured } from "./components/navigation";
 
 const StyleGuide = () => (
     <View style={styles.container} name="Wrapper">
@@ -31,30 +32,39 @@ const StyleGuide = () => (
           <Switch on/>
           </Rows>
         </Section>
+      </View>
 
+      <View style={styles.content} name="Category">
+        <SectionHeader title="Navigation"/>
         <Section>
           <Rows>
-          <Text>TabBar:</Text>
-          <TabBar
-            items={
-                [
-                  {
-                    iconSrc: 'https://unsplash.it/48',
-                    label: 'Tab 1'
-                  },
-                  {
-                    iconSrc: 'https://unsplash.it/48',
-                    label: 'Tab 2'
-                  },
-                  {
-                    iconSrc: 'https://unsplash.it/48',
-                    label: 'Tab 3'
-                  }
-                ]
-              }
-            />
+            <Text>TabBar:</Text>
+            <TabBar
+              items={
+                  [
+                    {
+                      iconSrc: 'https://image.ibb.co/iCJX1Q/icon_portfolio.png',
+                      label: 'Portfolios'
+                    },
+                    {
+                      iconSrc: 'https://image.ibb.co/cRhEFk/icon_assets.png',
+                      label: 'Assets'
+                    },
+                    {
+                      iconSrc: 'https://image.ibb.co/dy7gvk/icon_transactions.png',
+                      label: 'Transactions'
+                    }
+                  ]
+                }
+              />
           </Rows>
-      </Section>
+        </Section>
+        <Section>
+          <Rows>
+            <Text>NavBar (Featured):</Text>
+            <NavBarFeatured title="Portfolios"/>
+          </Rows>
+        </Section>
       </View>
 
       <View style={styles.content} name="Category">
@@ -75,7 +85,7 @@ const StyleGuide = () => (
         <Section>
         <Rows>
         <Text>List:</Text>
-        <SimpleList header="List Header" items={
+        <ListSimple header="List Header" items={
           [ 'Hello',
             'Nice to meet you',
             'Welcome to StashAway',

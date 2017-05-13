@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-sketchapp';
 import shortid from 'shortid';
 
-import styles from './simpleList-style';
+import styles from './listSimple-style';
 
 const ListItem = (props) => (
   <Text style={styles.list_item}>{props.title}</Text>

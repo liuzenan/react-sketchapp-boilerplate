@@ -9,7 +9,7 @@ export default {
       marginRight: -16
   },
   content: {
-    width: 320,
+    width: 375,
     marginRight: 16
   },
   text: {

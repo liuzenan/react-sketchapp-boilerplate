@@ -6,7 +6,7 @@ import styles from './tabBar-style';
 
 const TabBarCell = (props) => (
   <View style={styles.tabBar_cell} name="TabBar Cell">
-    <Image style={styles.tabBar_cell_icon} source={props.iconSrc}/>
+    <Image style={styles.tabBar_cell_icon} resizeMode="contain" source={props.iconSrc}/>
     <Text style={styles.tabBar_cell_text}>{props.label}</Text>
   </View>
 );
